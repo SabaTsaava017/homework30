@@ -105,11 +105,43 @@ let comments = [
 
 
 //დავალება3
-    const persons = [
-        { name: 'John', surname: 'Doe', age: 25, profession: 'Engineer', score: 80 },
-        { name: 'Jane', surname: 'Smith', age: 30, profession: 'Teacher', score: 95 },
-        { name: 'Alice', surname: 'Johnson', age: 40, profession: 'Doctor', score: 90 }
-      ];
+const people = [
+    {
+      name: "gio",
+      surname: "Doe",
+      age: 25,
+      profession: "Engineer",
+      score: 80
+    },
+    {
+      name: "Saba",
+      surname: "Smith",
+      age: 30,
+      profession: "Teacher",
+      score: 90
+    },
+    {
+      name: "Jane",
+      surname: "Johnson",
+      age: 35,
+      profession: "Doctor",
+      score: 95
+    }
+  ];
+
+
+  const namesOnly = people.map(person => ({
+    firstName: person.name,
+    lastName: person.surname
+  }));
+  
+  console.log(namesOnly);
+
+
+
+const doubledScores = people.map(person => person.score * 2);
+
+console.log(doubledScores);
 
 
 

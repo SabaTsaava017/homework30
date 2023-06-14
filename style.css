@@ -1,26 +1,16 @@
 #wrapper {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
   }
   
   .card {
-    border: 1px solid black;
+    border: 3px solid black;
   }
   
   form {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 40%;
   }
-  form input,
-  form textarea {
-    font-size: 30px;
-  }
-.modal {
-    display: none;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    background-color: brown;
-  }
+
